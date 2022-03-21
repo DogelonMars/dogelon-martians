@@ -30,8 +30,9 @@
     "eject": "react-scripts eject",
     "dev-chain": "hardhat node & yarn node scripts/deploy.js && fg",
 
-    "predeploy": "yarn hardhat compile && rm -r ./src/artifacts && mv ./artifacts ./src && yarn build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "yarn cleanup && yarn hardhat compile && rm -r ./src/artifacts && mv ./artifacts ./src && yarn build",
+    "deploy": "gh-pages -d build -n",
+    "cleanup": "rm -rf ./node_modules/.cache/gh-pages"
   },
   "eslintConfig": {
     "extends": [
