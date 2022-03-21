@@ -2,6 +2,7 @@
   "name": "elonapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DogelonMars.github.io/dogelon-martians",
   "dependencies": {
     "@ethersproject/providers": "^5.5.3",
     "@nomiclabs/hardhat-ethers": "^2.0.5",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@walletconnect/web3-provider": "^1.7.1",
     "ethers": "^5.5.4",
+    "gh-pages": "^3.2.3",
     "hardhat": "^2.9.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,7 +28,10 @@
     "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev-chain": "hardhat node & yarn node scripts/deploy.js && fg"
+    "dev-chain": "hardhat node & yarn node scripts/deploy.js && fg",
+
+    "predeploy": "yarn hardhat compile && rm -r ./src/artifacts && mv ./artifacts ./src && yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
