@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/dogelon-martians/static/css/main.8ebc7926.chunk.css",
+    "main.js": "/dogelon-martians/static/js/main.f76f7c7a.chunk.js",
+    "main.js.map": "/dogelon-martians/static/js/main.f76f7c7a.chunk.js.map",
+    "runtime-main.js": "/dogelon-martians/static/js/runtime-main.d407f11c.js",
+    "runtime-main.js.map": "/dogelon-martians/static/js/runtime-main.d407f11c.js.map",
+    "static/js/2.bf290004.chunk.js": "/dogelon-martians/static/js/2.bf290004.chunk.js",
+    "static/js/2.bf290004.chunk.js.map": "/dogelon-martians/static/js/2.bf290004.chunk.js.map",
+    "static/js/3.53235a0a.chunk.js": "/dogelon-martians/static/js/3.53235a0a.chunk.js",
+    "static/js/3.53235a0a.chunk.js.map": "/dogelon-martians/static/js/3.53235a0a.chunk.js.map",
+    "index.html": "/dogelon-martians/index.html",
+    "static/css/main.8ebc7926.chunk.css.map": "/dogelon-martians/static/css/main.8ebc7926.chunk.css.map",
+    "static/js/2.bf290004.chunk.js.LICENSE.txt": "/dogelon-martians/static/js/2.bf290004.chunk.js.LICENSE.txt",
+    "static/media/HeaderLogo.63b6c54b.svg": "/dogelon-martians/static/media/HeaderLogo.63b6c54b.svg",
+    "static/media/arrow.e660b973.svg": "/dogelon-martians/static/media/arrow.e660b973.svg",
+    "static/media/index.css": "/dogelon-martians/static/media/bg.bbbc2fb9.png",
+    "static/media/coming-soon.5d77226e.png": "/dogelon-martians/static/media/coming-soon.5d77226e.png",
+    "static/media/desktop.0d1e4eee.svg": "/dogelon-martians/static/media/desktop.0d1e4eee.svg",
+    "static/media/gloomy-peek.7c829e5d.png": "/dogelon-martians/static/media/gloomy-peek.7c829e5d.png",
+    "static/media/gloomyxdoge.e74747fd.svg": "/dogelon-martians/static/media/gloomyxdoge.e74747fd.svg",
+    "static/media/instagram.1ae173b0.svg": "/dogelon-martians/static/media/instagram.1ae173b0.svg",
+    "static/media/opensea.144a1813.svg": "/dogelon-martians/static/media/opensea.144a1813.svg",
+    "static/media/rotation.1ac1b839.gif": "/dogelon-martians/static/media/rotation.1ac1b839.gif",
+    "static/media/stackedheaderlogo.d482f21e.svg": "/dogelon-martians/static/media/stackedheaderlogo.d482f21e.svg",
+    "static/media/telegram.a6233c53.svg": "/dogelon-martians/static/media/telegram.a6233c53.svg",
+    "static/media/twitter.fc1418e6.svg": "/dogelon-martians/static/media/twitter.fc1418e6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d407f11c.js",
+    "static/js/2.bf290004.chunk.js",
+    "static/css/main.8ebc7926.chunk.css",
+    "static/js/main.f76f7c7a.chunk.js"
+  ]
+}
