@@ -20,6 +20,8 @@ if [ -n "$(git status --untracked-files=no --porcelain)" ]; then
 fi
 
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
+rm -rf $directory/.git
+git worktree prune || true
 git push origin --delete $branch || true
 git branch -D $branch || true
 
