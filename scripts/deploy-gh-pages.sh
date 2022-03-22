@@ -23,6 +23,7 @@ git worktree add $directory $branch
 
 echo -e "\033[0;32mGenerating site...\033[0m"
 build_command
+echo "gitdir: ../.git/worktrees/${directory}" >> ./$directory/.git
 
 echo -e "\033[0;32mDeploying $branch branch...\033[0m"
 cd $directory &&
