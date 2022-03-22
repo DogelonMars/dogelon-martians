@@ -5,9 +5,23 @@ build_command() {
   yarn hardhat compile && rm -r ./src/artifacts && mv ./artifacts ./src && yarn build
 }
 
+trap ctrl_c INT
+
+function ctrl_c() {
+  git worktree remove $directory || git worktree prune || true
+}
+
+set -e
+
+if [ -n "$(git status --untracked-files=no --porcelain)" ]; then
+  echo "Please commit or stash changes before deploy."
+  exit 1
+fi
+
 echo -e "\033[0;32mDeleting existing $branch...\033[0m"
-git push origin --delete $branch
-git branch -D $branch
+git worktree remove $directory || git worktree prune || true
+git push origin --delete $branch || true
+git branch -D $branch || true
 
 echo -e "\033[0;32mSetting up new $branch branch\033[0m"
 git checkout --orphan $branch
